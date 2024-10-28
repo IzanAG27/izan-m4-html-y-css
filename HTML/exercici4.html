@@ -1,105 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ejercicio</title>
-<style>
-    .container {
-        display: flex;
-        gap: 10px;
-    }
-
-    .table1, .table2, .table3, .checkboxes {
-        border-collapse: collapse;
-    }
-
-    .table1, .table1 td, .table2, .table2 td, .table3, .table3 td {
-        border: 1px solid black;
-        padding: 5px;
-        text-align: center;
-    }
-
-    .table2 td {
-        padding: 5px;
-        text-align: left;
-    }
-
-    .table3 {
-        width: 100%;
-        height: 100px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 5px;
-    }
-
-    .checkboxes {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        gap: 10px;
-    }
-
-    .checkbox {
-        border: 1px solid black;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-    }
-</style>
-</head>
-<body>
-
-<div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio sin CSS</title>
+  </head>
+  <body>
     <!-- Primera tabla -->
-    <table class="table1">
-        <tr>
-            <td>Name</td>
-            <td>Telephone</td>
-        </tr>
-        <tr>
-            <td>Bill Gates</td>
-            <td>555 77 854 <br> 555 77 855</td>
-        </tr>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <td>Name</td>
+        <td>Telephone</td>
+      </tr>
+      <tr>
+        <td>Bill Gates</td>
+        <td>
+          555 77 854 <br />
+          555 77 855
+        </td>
+      </tr>
     </table>
-</div>
 
-<div>
+    <br />
+
     <!-- Segunda tabla -->
-    <table class="table2">
-        <tr>
-            <td>First Name:</td>
-            <td>Bill Gates</td>
-        </tr>
-        <tr>
-            <td>Telephone:</td>
-            <td>555 77 854 <br> 555 77 855</td>
-        </tr>
-    </table>
-</div>
-
-<div class="container">
-    <!-- Tercera tabla con grid -->
-    <table class="table3">
-        <tr>
-            <td>First</td>
-            <td>Row</td>
-        </tr>
-        <tr>
-            <td>Second</td>
-            <td>Row</td>
-        </tr>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <td>First Name:</td>
+        <td>Bill Gates</td>
+      </tr>
+      <tr>
+        <td>Telephone:</td>
+        <td>
+          555 77 854 <br />
+          555 77 855
+        </td>
+      </tr>
     </table>
 
-    <!-- Checkboxes -->
-    <div class="checkboxes">
-        <div class="checkbox">✔️</div>
-        <div class="checkbox">✔️</div>
-    </div>
-</div>
+    <br />
 
-</body>
+    <!-- Contenedor con tablas y checkboxes simulados -->
+    <table border="0" cellpadding="5" cellspacing="10">
+      <tr>
+        <!-- Tercera tabla de cuadrícula -->
+        <td>
+          <table
+            border="1"
+            cellpadding="20"
+            cellspacing="0"
+            style="width: 100px; height: 100px"
+          >
+            <tr>
+              <td>First</td>
+              <td>Row</td>
+            </tr>
+            <tr>
+              <td>Second</td>
+              <td>Row</td>
+            </tr>
+          </table>
+        </td>
+
+        <!-- Checkboxes simuladas -->
+        <td>
+          <table border="1" cellpadding="15" cellspacing="10">
+            <tr>
+              <td style="width: 50px; height: 50px; text-align: center">✔️</td>
+            </tr>
+            <tr>
+              <td style="width: 50px; height: 50px; text-align: center">✔️</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
