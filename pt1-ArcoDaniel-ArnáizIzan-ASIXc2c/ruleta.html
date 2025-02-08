@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta de Noms</title>
+    <link rel="stylesheet" href="ruleta.css">
+</head>
+<body>
+    <h1>Ruleta de Noms</h1>
+    <div class="button-container">
+        <button id="loadNamesButton">Carregar Noms</button>
+        <button id="spinButton">Girar</button>
+        <button onclick="window.location.href='index.html'">Tornar</button>
+    </div>
+    <div id="wheel-container">
+        <div id="wheel"></div>
+        <img id="needle" src="images/needle.png" alt="Aguja">
+    </div>
+    <div id="selectedName"></div>
+    <audio id="spinSound" src="audio/spin.mp3"></audio>
+    <audio id="clickSound" src="audio/click.mp3"></audio>
+    <script src="style.js"></script>
+    <script src="ruleta.js"></script>
+</body>
+</html>

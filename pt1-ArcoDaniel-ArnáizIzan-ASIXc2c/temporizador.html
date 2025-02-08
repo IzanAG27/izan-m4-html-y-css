@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rellotge-Temporitzador</title>
+    <link rel="stylesheet" href="temporizador.css">
+    <link href="https://fonts.googleapis.com/css2?family=Digital-7+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Rellotge-Temporitzador</h1>
+    <div class="form-container">
+        <div>
+            <label for="endTime">Hora de finalització:</label>
+            <input type="time" id="endTime">
+            <button id="startEndTime">Iniciar</button>
+        </div>
+        <div>
+            <label for="duration">Duració:</label>
+            <input type="text" id="duration" placeholder="HH:MM:SS">
+            <button id="startDuration">Iniciar</button>
+        </div>
+    </div>
+    <div id="current-time-label">Hora actual:</div>
+    <div id="current-time" class="digital-clock"></div>
+    <div id="countdown-label" style="display: none;">Cuenta atrás:</div>
+    <div id="clock" class="digital-clock" style="display: none;"></div>
+    <audio id="alertSound" src="audio/alert.mp3"></audio>
+    <audio id="clickSound" src="audio/click.mp3"></audio>
+    <button onclick="window.location.href='index.html'">Tornar</button>
+    <script src="style.js"></script>
+    <script src="temporizador.js"></script>
+</body>
+</html>
